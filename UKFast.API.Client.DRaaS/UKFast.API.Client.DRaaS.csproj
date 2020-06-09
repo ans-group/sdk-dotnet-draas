@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Operations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="UKFast.API.Client.Core" Version="1.0.4" />
   </ItemGroup>
 
