@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UKFast.API.Client.DRaaS", "UKFast.API.Client.DRaaS\UKFast.API.Client.DRaaS.csproj", "{AE923314-EEAA-499C-93BD-857D3DFD0CEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UKFast.API.Client.DRaaS.Tests", "UKFast.API.Client.DRaaS.Tests\UKFast.API.Client.DRaaS.Tests.csproj", "{60125A15-354F-4593-B461-18327C3D9557}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE923314-EEAA-499C-93BD-857D3DFD0CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE923314-EEAA-499C-93BD-857D3DFD0CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE923314-EEAA-499C-93BD-857D3DFD0CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60125A15-354F-4593-B461-18327C3D9557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60125A15-354F-4593-B461-18327C3D9557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60125A15-354F-4593-B461-18327C3D9557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60125A15-354F-4593-B461-18327C3D9557}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
