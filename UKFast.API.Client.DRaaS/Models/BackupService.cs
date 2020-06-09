@@ -1,6 +1,8 @@
-﻿namespace UKFast.API.Client.DRaaS.Models
+﻿using UKFast.API.Client.Models;
+
+namespace UKFast.API.Client.DRaaS.Models
 {
-    public class BackupService
+    public class BackupService : ModelBase
     {
         [Newtonsoft.Json.JsonProperty("service")]
         public string Service { get; set; }

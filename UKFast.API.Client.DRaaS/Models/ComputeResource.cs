@@ -1,6 +1,8 @@
-﻿namespace UKFast.API.Client.DRaaS.Models
+﻿using UKFast.API.Client.Models;
+
+namespace UKFast.API.Client.DRaaS.Models
 {
-    public class ComputeResource
+    public class ComputeResource : ModelBase
     {
         [Newtonsoft.Json.JsonProperty("id")]
         public string ID { get; set; }

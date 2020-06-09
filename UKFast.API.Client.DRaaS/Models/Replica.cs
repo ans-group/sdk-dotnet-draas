@@ -1,6 +1,8 @@
-﻿namespace UKFast.API.Client.DRaaS.Models
+﻿using UKFast.API.Client.Models;
+
+namespace UKFast.API.Client.DRaaS.Models
 {
-    public class Replica
+    public class Replica : ModelBase
     {
         [Newtonsoft.Json.JsonProperty("id")]
         public string ID { get; set; }
