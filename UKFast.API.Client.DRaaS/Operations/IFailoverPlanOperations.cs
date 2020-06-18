@@ -7,7 +7,7 @@ using UKFast.API.Client.Request;
 
 namespace UKFast.API.Client.DRaaS.Operations
 {
-    public interface ISolutionFailoverPlanOperations<T> where T : FailoverPlan
+    public interface IFailoverPlanOperations<T> where T : FailoverPlan
     {
         Task<IList<T>> GetSolutionFailoverPlansAsync(string solutionID, ClientRequestParameters parameters = null);
 

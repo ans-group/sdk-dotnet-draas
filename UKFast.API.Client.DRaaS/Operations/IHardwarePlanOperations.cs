@@ -6,7 +6,7 @@ using UKFast.API.Client.Request;
 
 namespace UKFast.API.Client.DRaaS.Operations
 {
-    public interface ISolutionHardwarePlanOperations<T> where T : HardwarePlan
+    public interface IHardwarePlanOperations<T> where T : HardwarePlan
     {
         Task<IList<T>> GetSolutionHardwarePlansAsync(string solutionID, ClientRequestParameters parameters = null);
 

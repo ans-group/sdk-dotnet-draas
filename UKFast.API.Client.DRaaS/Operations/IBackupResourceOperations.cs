@@ -6,7 +6,7 @@ using UKFast.API.Client.Request;
 
 namespace UKFast.API.Client.DRaaS.Operations
 {
-    public interface ISolutionBackupResourceOperations<T> where T : BackupResource
+    public interface IBackupResourceOperations<T> where T : BackupResource
     {
         Task<IList<T>> GetSolutionBackupResourcesAsync(string solutionID, ClientRequestParameters parameters = null);
 

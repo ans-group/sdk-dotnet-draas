@@ -6,7 +6,7 @@ using UKFast.API.Client.Request;
 
 namespace UKFast.API.Client.DRaaS.Operations
 {
-    public interface ISolutionComputeResourceOperations<T> where T : ComputeResource
+    public interface IComputeResourceOperations<T> where T : ComputeResource
     {
         Task<IList<T>> GetSolutionComputeResourcesAsync(string solutionID, ClientRequestParameters parameters = null);
 

@@ -5,21 +5,21 @@ namespace UKFast.API.Client.DRaaS
 {
     public interface IUKFastDRaaSClient : IUKFastClient
     {
-        ISolutionBackupResourceOperations<BackupResource> SolutionBackupResourceOperations();
+        IBackupResourceOperations<BackupResource> BackupResourceOperations();
 
-        ISolutionBackupServiceOperations<BackupService> SolutionBackupServiceOperations();
+        IBackupServiceOperations<BackupService> BackupServiceOperations();
 
         IBillingTypeOperations<BillingType> BillingTypeOperations();
 
-        ISolutionComputeResourceOperations<ComputeResource> SolutionComputeResourceOperations();
+        IComputeResourceOperations<ComputeResource> ComputeResourceOperations();
 
-        ISolutionFailoverPlanOperations<FailoverPlan> SolutionFailoverPlanOperations();
+        IFailoverPlanOperations<FailoverPlan> FailoverPlanOperations();
 
-        ISolutionHardwarePlanOperations<HardwarePlan> SolutionHardwarePlanOperations();
+        IHardwarePlanOperations<HardwarePlan> HardwarePlanOperations();
 
         IIOPSTierOperations<IOPSTier> IOPSTierOperations();
 
-        ISolutionReplicaOperations<Replica> SolutionReplicaOperations();
+        IHardwarePlanReplicaOperations<Replica> HardwarePlanReplicaOperations();
 
         ISolutionOperations<Solution> SolutionOperations();
     }
