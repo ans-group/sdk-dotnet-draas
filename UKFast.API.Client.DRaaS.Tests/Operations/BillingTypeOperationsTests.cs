@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UKFast.API.Client.DRaaS.Models;
 using UKFast.API.Client.DRaaS.Operations;
 using UKFast.API.Client.Exception;
@@ -36,7 +36,7 @@ namespace UKFast.API.Client.DRaaS.Tests.Operations
         {
             IUKFastDRaaSClient client = Substitute.For<IUKFastDRaaSClient>();
 
-            client.GetPaginatedAsync<BillingType>("/draas/v1/billing-types", null).Returns(Task.Run(() => 
+            client.GetPaginatedAsync<BillingType>("/draas/v1/billing-types", null).Returns(Task.Run(() =>
                 new Paginated<BillingType>(client, "/draas/v1/billing-types", null,
                     new ClientResponse<IList<BillingType>>()
                     {
@@ -77,9 +77,8 @@ namespace UKFast.API.Client.DRaaS.Tests.Operations
         public async Task GetBillingTypeAsync_InvalidBillingTypeID_ThrowsUKFastClientValidationException()
         {
             var ops = new BillingTypeOperations<BillingType>(null);
-            await Assert.ThrowsExceptionAsync<UKFastClientValidationException>(() => 
+            await Assert.ThrowsExceptionAsync<UKFastClientValidationException>(() =>
                 ops.GetBillingTypeAsync(""));
         }
-
     }
 }

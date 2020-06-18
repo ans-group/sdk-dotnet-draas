@@ -88,7 +88,7 @@ namespace UKFast.API.Client.DRaaS.Tests.Operations
             {
                 IOPSTierID = "11111111-1111-1111-1111-111111111111"
             };
-            
+
             var ops = new SolutionOperations<Solution>(client);
             await ops.UpdateSolutionAsync("00000000-0000-0000-0000-000000000000", req);
 
@@ -99,9 +99,8 @@ namespace UKFast.API.Client.DRaaS.Tests.Operations
         public async Task UpdateSolutionAsync_InvalidSolutionID_ThrowsUKFastClientValidationException()
         {
             var ops = new SolutionOperations<Solution>(null);
-            await Assert.ThrowsExceptionAsync<UKFastClientValidationException>(() => 
+            await Assert.ThrowsExceptionAsync<UKFastClientValidationException>(() =>
                 ops.UpdateSolutionAsync("", null));
         }
-
     }
 }

@@ -50,7 +50,6 @@ namespace UKFast.API.Client.DRaaS.Operations
             }
 
             await this.Client.PostAsync($"/draas/v1/solutions/{solutionID}/replicas/{replicaID}/iops", req);
-
         }
     }
 }

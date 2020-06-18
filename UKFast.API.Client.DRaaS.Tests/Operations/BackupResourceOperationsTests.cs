@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UKFast.API.Client.DRaaS.Models;
 using UKFast.API.Client.DRaaS.Operations;
 using UKFast.API.Client.Exception;
@@ -37,7 +37,7 @@ namespace UKFast.API.Client.DRaaS.Tests.Operations
             IUKFastDRaaSClient client = Substitute.For<IUKFastDRaaSClient>();
 
             client.GetPaginatedAsync<BackupResource>("/draas/v1/solutions/00000000-0000-0000-0000-000000000000/backup-resources").Returns(Task.Run(() =>
-                new Paginated<BackupResource>(client, "/draas/v1/solutions/00000000-0000-0000-0000-000000000000/backup-resources", null, 
+                new Paginated<BackupResource>(client, "/draas/v1/solutions/00000000-0000-0000-0000-000000000000/backup-resources", null,
                     new ClientResponse<IList<BackupResource>>()
                     {
                         Body = new ClientResponseBody<IList<BackupResource>>()
@@ -64,6 +64,5 @@ namespace UKFast.API.Client.DRaaS.Tests.Operations
             await Assert.ThrowsExceptionAsync<UKFastClientValidationException>(() =>
                 ops.GetSolutionBackupResourcesPaginatedAsync("", null));
         }
-
     }
 }

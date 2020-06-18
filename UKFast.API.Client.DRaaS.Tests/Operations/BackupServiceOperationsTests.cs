@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
 using NSubstitute;
+using System.Threading.Tasks;
 using UKFast.API.Client.DRaaS.Models;
 using UKFast.API.Client.DRaaS.Models.Request;
 using UKFast.API.Client.DRaaS.Operations;

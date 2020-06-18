@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UKFast.API.Client.DRaaS.Models;
 using UKFast.API.Client.DRaaS.Operations;
 using UKFast.API.Client.Exception;
